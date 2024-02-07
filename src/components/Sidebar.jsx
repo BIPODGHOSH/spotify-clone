@@ -20,8 +20,8 @@ const Sidebar = () => {
     setIsActiveSearch("gray");
   };
   return (
-    <div className=" text-white flex flex-col p-2">
-      <div className="flex flex-col gap-4 bg-gray-900 p-4 rounded-md mb-2">
+    <div className=" text-white flex flex-col p-2 w-1/4 ">
+      <div className="flex flex-col gap-4 bg-zinc-950 p-4 rounded-md mb-2">
         <div className="flex gap-3 cursor-pointer" onClick={handleHome}>
           <GoHomeFill color={isactiveHome} fontSize="1.6rem" />
           {isactiveHome === "gray" ? (
@@ -39,7 +39,7 @@ const Sidebar = () => {
           )}
         </div>
       </div>
-      <div className="flex flex-col gap-4 bg-slate-900 p-4 rounded-md pb-24">
+      <div className="flex flex-col gap-4 bg-zinc-950 p-4 rounded-md h-full">
         <div className=" flex text-gray-400 justify-between">
           <div className="flex gap-2">
             <VscLibrary color="gray" fontSize="1.6rem" />
@@ -58,16 +58,22 @@ const Sidebar = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-4 bg-gray-800 p-4 rounded-md">
-          <h1 className="">Create your first playlist</h1>
-          <p className="">it's easy,we'll help you</p>
+        <div className="flex flex-col gap-4 bg-zinc-800 p-4 rounded-md">
+          <div className="">
+            <h1 className=" font-bold">Create your first playlist</h1>
+            <p className="">it's easy,we'll help you</p>
+          </div>
+
           <button className=" max-w-36 bg-slate-50 text-black rounded-lg font-semibold">
             Create Playlist
           </button>
         </div>
-        <div className="flex flex-col gap-4 bg-gray-800 p-4 rounded-md">
-          <h1 className="">Let's find some prodcusts to follow</h1>
-          <p className="">We'll keep updated on new episodes</p>
+        <div className="flex flex-col gap-4 bg-zinc-800 p-4 rounded-md">
+          <div className="">
+            <h1 className="font-bold">Let's find some prodcusts to follow</h1>
+            <p className="">We'll keep updated on new episodes</p>
+          </div>
+
           <button className=" max-w-36 bg-slate-50 text-black rounded-lg font-semibold">
             Browse Prodcasts
           </button>
